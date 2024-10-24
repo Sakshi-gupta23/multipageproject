@@ -1,0 +1,1067 @@
+@import "_media";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  height: fit-content;
+  background: url(/multi/woman-holding-box-pink-tulips-with-pink-box-pink-flowers_873840-353.avif)
+    no-repeat center center/cover;
+  position: relative;
+}
+.hero img {
+  z-index: 10;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.hero * {
+  z-index: 23;
+}
+nav h1 :hover {
+  color: #180000;
+  border: 1px solid white;
+}
+
+.hero nav {
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: inherit;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+.hero nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+  position: absolute;
+  right: 0;
+}
+
+.hero nav ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  justify-content: space-between;
+  background-color: black;
+}
+
+#click {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hero nav ul li a:hover {
+  color: black;
+  border: 1px solid white;
+}
+
+.mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+  gap: 30px;
+}
+.mid h1 {
+  font-size: 75px;
+  color: whitesmoke;
+  font-family: "Cormorant Garamond", serif;
+}
+.mid h1 {
+  z-index: 20;
+}
+h1:hover {
+  color: #180000;
+  // border: 1px solid white;
+}
+.mid h3 {
+  color: whitesmoke;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 45px;
+  position: relative;
+  z-index: 0;
+}
+.mid p {
+  color: whitesmoke;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 30px;
+}
+#btn {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: black;
+  width: 120px;
+  height: 70px;
+  padding-top: 20px;
+  font-size: 20px;
+}
+#btn:hover {
+  color: whitesmoke;
+  background-color: black;
+}
+
+.florist {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+}
+.sideimages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+.sideimages img {
+  border-top-right-radius: 150px;
+  border-top-left-radius: 150px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 10px;
+  box-shadow: #ffffff;
+}
+.sideimages #girlflower {
+  border-top-right-radius: 150px;
+  border-top-left-radius: 150px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 10px;
+  box-shadow: #ffffff;
+}
+.sidecontent {
+  margin-top: 5%;
+  margin-left: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    color: orangered;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  h1 {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+  }
+  p {
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 8px;
+    padding-top: 15px;
+    padding-right: 15px;
+  }
+  button {
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+
+    background-color: white;
+    margin-top: 50px;
+
+    padding: 20px 15px 20px 20px;
+  }
+  button:hover {
+    color: white;
+    background-color: black;
+  }
+}
+
+//  FIRST  new arrival
+.arrival {
+  display: grid;
+  background-color: whitesmoke;
+  margin-top: 20px;
+  .headings {
+    h3 {
+      color: black;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      text-align: center;
+      padding-top: 5px;
+    }
+    h1 {
+      color: black;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+      font-size: 30px;
+    }
+    p {
+      color: black;
+      text-align: center;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      font-size: 20px;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 10px;
+      margin: 2rem 0px;
+    }
+    .cards {
+      img {
+        border-radius: 10px;
+        border-radius: 1px solid black;
+      }
+
+      img:hover {
+        transform: scale(1.1, 1.1);
+      }
+
+      h5 {
+        font-family: Handlee, cursive;
+        color: black;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 12px;
+      }
+
+      h2 {
+        font-family: "Courier New", Courier, monospace;
+        text-align: center;
+        color: black;
+        margin-top: 12px;
+      }
+      p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: black;
+        text-align: center;
+        margin-top: 12px;
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
+
+// special offer
+.offer {
+  display: flex;
+  margin-top: 20px;
+  background-color: black;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  gap: 3rem;
+}
+
+.offerleftimg {
+  img {
+    border-top-right-radius: 250px;
+    border-top-left-radius: 250px;
+    padding-top: 30px;
+  }
+}
+.offerheading {
+  padding-top: 150px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    color: white;
+    text-align: center;
+  }
+  h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 40px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
+  #offerbtn {
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+
+    background-color: red;
+    margin-bottom: 10px;
+
+    padding: 10px 10px 20px 20px;
+  }
+}
+
+.action-outside {
+  width: 100%;
+  .action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: black;
+    gap: 8rem;
+    flex-wrap: wrap;
+
+    .actionleftimg {
+      img {
+        height: 698px;
+        max-width: 540px;
+        object-fit: cover;
+        border-top-right-radius: 250px;
+        border-top-left-radius: 250px;
+        padding-top: 30px;
+      }
+    }
+    .actionheading {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h3 {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+      }
+      h1 {
+        font-family: "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        color: white;
+
+        font-size: 45px;
+      }
+    }
+  }
+  .acbtn {
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: darkslategrey;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    border-radius: 5px;
+
+    button {
+      width: 100%;
+      padding: 8px;
+    }
+  }
+
+  .acbtn:hover {
+    color: black;
+    background-color: whitesmoke;
+    border-radius: black;
+  }
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .testimonial-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 300px;
+    max-width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #666;
+      line-height: 1.5;
+    }
+  }
+}
+
+// ABOUT SECTION STARTS FROM HERE
+// team
+.team {
+  height: fit-content;
+  margin-top: 30px;
+  background-color: beige;
+}
+
+// TEAM HEADING
+.teamhd {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+
+  h3 {
+    font-family: "Heebo", sans-serif;
+    color: black;
+    text-align: center;
+  }
+
+  h1 {
+    font-family: "Heebo", sans-serif;
+    color: black;
+    text-align: center;
+  }
+
+  h5 {
+    font-family: "Heebo", sans-serif;
+    color: black;
+    text-align: center;
+  }
+}
+.teamcnt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding-top: 50px;
+
+  img {
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+  }
+
+  h3 {
+    font-family: "Cormorant Garamond", sans-serif;
+    color: black;
+    text-align: center;
+  }
+  h4 {
+    font-family: "Cormorant Garamond", sans-serif;
+    color: black;
+    text-align: center;
+  }
+}
+
+//SHOP SECTION
+
+.shop {
+  margin-top: 30px;
+  margin-left: 20px;
+  background-color: #ffffff;
+}
+.shtags {
+  font-family: "Cormorant Garamond", sans-serif;
+  color: rgb(25, 52, 52);
+  font-size: 40px;
+  text-align: center;
+  margin-top: 150px;
+}
+
+// H3 HEADING
+.sh {
+  font-family: "Cormorant Garamond", sans-serif;
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+// SHOWING RESULTS BEFORE DROP DOWN
+.showing {
+  h3 {
+    text-align: left;
+    font-family: "Heebo", sans-serif;
+    color: black;
+    margin-top: 10px;
+  }
+
+  // SORTING
+
+  .sorting {
+    input {
+      text-align: right;
+      font-family: "Heebo", sans-serif;
+    }
+  }
+}
+
+.shopcards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 20px;
+
+  .salecards img {
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 350px;
+    width: 350px;
+
+    &:hover {
+      transform: scale(1.1, 1.1);
+    }
+  }
+
+  .over {
+    font-family: "Heebo", sans-serif;
+    color: black;
+    text-align: center;
+    border-radius: 20px;
+  }
+
+  button {
+    border-radius: 10px;
+    background-color: white;
+    color: #180000;
+    text-align: center;
+    font-family: "Heebo", sans-serif;
+    margin: 10px 20px 5px 135px;
+    padding: 10px 10px 10px 10px;
+    font-weight: 200;
+  }
+  button:hover {
+    background-color: black;
+    color: white;
+  }
+
+  h5 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: #6b6262;
+    margin-top: 12px;
+  }
+  h5:hover {
+    color: rgb(138, 125, 218);
+  }
+  h2 {
+    font-family: "Cormorant Garamond", sans-serif;
+    text-align: center;
+    color: black;
+    margin-top: 12px;
+  }
+  h2:hover {
+    color: lightseagreen;
+  }
+  p {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    text-align: center;
+    color: #180000;
+    margin-top: 12px;
+  }
+  p:hover {
+    color: rgb(72, 106, 95);
+  }
+}
+
+// SHOPSECTION END HERE
+
+// Contact FORM
+
+.contact-form {
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.section6_outer::before {
+  content: "";
+  background-color: var(--color--orange);
+  filter: blur(200px);
+  border-radius: 50%;
+  width: 273px;
+  height: 196px;
+  position: absolute;
+  top: 20%;
+  bottom: auto;
+  z-index: 32;
+  left: 39%;
+}
+
+.section6_outer_h1 h1 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.outside_grid_area {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-us-form {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr;
+  width: 100%;
+  max-width: 600px;
+  background: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* backdrop-filter: blur(10px);  */
+  position: relative;
+  background-color: #ffffff;
+  background-image: url(/image/gridimage.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.grid_body_section6 label {
+  color: black;
+  text-align: left;
+}
+.grid_body_section6 input {
+  background-color: #65615d;
+
+  color: white;
+}
+
+.grid_body_section6::placeholder {
+  color: white;
+}
+
+.grid_body_section6 textarea {
+  background: transparent;
+  color: black;
+  font-weight: bolder;
+}
+
+.hrflex {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid_body_section6 label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.grid_body_section6 input[type="text"],
+.grid_body_section6 input[type="email"],
+.grid_body_section6 input[type="number"],
+.grid_body_section6 textarea {
+  padding: 10px;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 90%;
+  background-color: white;
+  color: black;
+}
+
+.grid_body_section6 input {
+  border: 0 solid #000;
+  border-radius: 18px;
+}
+
+.grid_body_section6 textarea {
+  resize: vertical;
+  min-height: 100px;
+
+  border: 1px solid black;
+  border-radius: 18px;
+  font-weight: bolder;
+}
+
+.grid_body_section6 input::placeholder {
+  font-weight: 700;
+  z-index: 233;
+}
+
+.grid_body_section6 button {
+  color: white;
+  border: none;
+  border: 0 solid #000;
+  border-radius: 18px;
+  cursor: pointer;
+  font-size: 1rem;
+
+  border-radius: 50px;
+  padding: 12px 25px;
+  width: 30%;
+  background-color: black;
+  color: white;
+}
+// CONTACT SECTION END HERE
+
+// CART SECTION
+
+.cart-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  // CART HEADER
+  .cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+
+    // YOUR SHOPPING
+    h1 {
+      color: black;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    // PRICE FILTER
+    .price-filter {
+      display: flex;
+      align-items: center;
+
+      // PRICE RANGE
+      label {
+        margin-right: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: black;
+      }
+
+      input[type="range"] {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 150px;
+        height: 5px;
+        background: #ddd;
+        border-radius: 5px;
+        outline: none;
+
+        &::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          background: #007bff;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  // CART
+  .cart-items {
+    margin-top: 20px;
+
+    // CARD CART ITEM
+    .cart-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #eee;
+      color: black;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+      img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-right: 20px;
+      }
+
+      // PRODUCT & RATE
+      .item-details {
+        flex: 1;
+
+        // PRODUCT
+        h2 {
+          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif;
+          color: black;
+        }
+
+        // RATE
+        p {
+          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif;
+          font-size: 20px;
+          color: black;
+          margin-bottom: 10px;
+        }
+
+        // CART BUTTON
+        // ADD TO CART
+        .add-to-cart-btn {
+          padding: 10px 15px;
+          background-color: black;
+          color: white;
+          border: 1px solid black;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: whitesmoke;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+
+  // TOTAL PRICE
+  .cart-summary {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+
+    // TOTAL PRICE
+    h2 {
+      color: black;
+      background-color: whitesmoke;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      span {
+        color: rgb(40, 147, 113);
+      }
+    }
+
+    // CHECKOUT
+    .checkout-guarantee {
+      margin-top: 20px;
+
+      // Guaranteed Secure Checkout
+      p {
+        color: #28a745;
+        font-weight: bold;
+      }
+
+      // PAYMENT OPTIONS
+      .payment-options {
+        margin-top: 10px;
+        display: flex;
+        img {
+          width: 50px;
+          height: 30px;
+          margin-right: 10px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+// footer
+.last {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-top: 50px;
+}
+.detail {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-right: 12%;
+  margin-left: 50px;
+}
+.detail h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: black;
+  text-align: left;
+}
+
+.detail p {
+  text-align: left;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 18%;
+  padding-right: 15px;
+}
+.link {
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    gap: 5px;
+    flex-direction: column;
+  }
+}
+a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a:hover {
+  color: orangered;
+}
+
+.info {
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+  margin-right: 12%;
+  margin-top: 1%;
+}
+.info p {
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.secondfooter {
+  display: flex;
+  gap: 60%;
+  padding-top: 5%;
+  padding-bottom: 2%;
+
+  border-top: 1px solid black;
+}
+.right {
+  text-align: left;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-left: 10%;
+}
+.icons {
+  text-align: right;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.icons:hover {
+  color: rgb(89, 213, 217);
+}
+
+@media (max-width: 768px) {
+  .cart-container {
+    padding: 15px;
+
+    .cart-header {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .price-filter {
+        margin-top: 10px;
+      }
+    }
+
+    .cart-items .cart-item {
+      flex-direction: column;
+      align-items: flex-start;
+
+      img {
+        margin-bottom: 10px;
+      }
+    }
+
+    .cart-summary {
+      h2 {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .payment-options {
+        flex-direction: column;
+
+        img {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    justify-content: center;
+
+    .testimonial-item {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-item {
+    img {
+      width: 80px;
+      height: 80px;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@include media();
+
+@include media46();

@@ -1,0 +1,53 @@
+@mixin media() {
+  @media screen and (max-width: 768px) {
+    .hero nav ul {
+      display: none;
+
+      top: 12px;
+      right: 6%;
+      background: black;
+      z-index: 32;
+      color: white;
+
+      li {
+        margin: 1rem;
+      }
+    }
+
+    #click:checked ~ #ullist {
+      display: block;
+    }
+
+    .hamburger {
+      display: block;
+    }
+
+    .offerleftimg {
+      img {
+        width: 430px;
+      }
+    }
+
+    .actionleftimg {
+      img {
+        width: 430px;
+      }
+    }
+  }
+}
+
+@mixin media46() {
+  @media screen and (max-width: 768px) {
+    .offerleftimg {
+      img {
+        width: 330px;
+      }
+    }
+
+    .actionleftimg {
+      img {
+        width: 330px;
+      }
+    }
+  }
+}
